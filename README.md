@@ -2,46 +2,43 @@
 
 A comprehensive machine learning project for detecting fraudulent credit card transactions using multiple algorithms and evaluation metrics.
 
-## Project Structure
 credit_card_fraud_detection/
-.
-├── config
-│   └── config.yaml
-├── data
-│   ├── processed
-│   └── raw
-├── fraud_detection.log
-├── models
-│   ├── model_configs.py
-│   ├── saved_models
-│   └── scaler.pkl
-├── myevn
-│   ├── bin
-│   ├── etc
-│   ├── include
-│   ├── lib
+├── config/
+│   └── config.yaml                   # Configuration file (e.g., model parameters)
+├── data/
+│   ├── processed/                    # Processed datasets ready for modeling
+│   └── raw/                          # Original raw data files
+├── fraud_detection.log               # Log file for training and evaluation
+├── models/
+│   ├── model_configs.py              # Model configuration setup
+│   ├── saved_models/                 # Directory to store trained models
+│   └── scaler.pkl                    # Serialized scaler for data normalization
+├── myevn/                            # Virtual environment folder (should be .gitignored)
+│   ├── bin/
+│   ├── etc/
+│   ├── include/
+│   ├── lib/
 │   ├── pyvenv.cfg
-│   └── share
-├── requirements.txt
-├── results
-│   ├── models
-│   ├── plots
-│   └── reports
-├── run.py
-├── src
+│   └── share/
+├── requirements.txt                 # Project dependencies
+├── results/
+│   ├── models/                       # Exported trained model files
+│   ├── plots/                        # Visualizations, graphs, ROC curves, etc.
+│   └── reports/                      # Evaluation reports, metrics, and summaries
+├── run.py                           # Main script to run training pipeline
+├── src/                             
 │   ├── __init__.py
-│   ├── __pycache__
-│   ├── data_loader.py
-│   ├── data_preprocessing.py
-│   ├── model_evaluator.py
-│   ├── model_trainer.py
-│   └── visualization.py
-└── tests
+│   ├── data_loader.py               # Load and summarize dataset
+│   ├── data_preprocessing.py        # Data cleaning, scaling, and splitting
+│   ├── model_evaluator.py           # Evaluation metrics and plots
+│   ├── model_trainer.py             # Training logic for multiple models
+│   └── visualization.py             # Exploratory data analysis and result visualization
+└── tests/
     ├── __init__.py
-    ├── __pycache__
-    ├── test_data_loader.py
-    ├── test_models.py
-    └── test_preprocessing.py
+    ├── test_data_loader.py          # Unit tests for data loading
+    ├── test_models.py               # Unit tests for model training and prediction
+    └── test_preprocessing.py        # Unit tests for preprocessing logic
+
 
 ## Features
 
