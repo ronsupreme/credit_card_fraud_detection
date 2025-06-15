@@ -40,7 +40,7 @@ credit_card_fraud_detection/
     ├── test_data_loader.py       # Unit tests for data loading
     ├── test_models.py            # Unit tests for model training and prediction
     └── test_preprocessing.py     # Unit tests for preprocessing logic
-
+```
 ## Features
 
 - **Multiple ML Algorithms**: KNN, Logistic Regression, SVM, Decision Tree, Random Forest, Gradient Boosting
